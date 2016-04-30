@@ -53,16 +53,6 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DMAgent
-LOCAL_MODULE_OWNER := nextbit
-LOCAL_SRC_FILES := proprietary/app/DMAgent/DMAgent.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := platform
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := RCSBootstraputil
 LOCAL_MODULE_OWNER := nextbit
 LOCAL_SRC_FILES := proprietary/app/RCSBootstraputil/RCSBootstraputil.apk
