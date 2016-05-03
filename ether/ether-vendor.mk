@@ -19,14 +19,13 @@ PRODUCT_PACKAGES += \
     CNEService \
     ims \
     imssettings \
-    RCSBootstraputil \
-    RcsImsBootstraputil \
     shutdownlistener \
     TimeService
 
 PRODUCT_PACKAGES += \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    qcrilmsgtunnel
 
 PRODUCT_PACKAGES += \
     libdiag \
