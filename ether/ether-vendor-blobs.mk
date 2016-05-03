@@ -463,6 +463,12 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/nextbit/ether/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
+    vendor/nextbit/ether/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/nextbit/ether/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/nextbit/ether/proprietary/bin/cnss_diag:system/bin/cnss_diag
 endif
