@@ -415,7 +415,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
