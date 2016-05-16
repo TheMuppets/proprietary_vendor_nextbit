@@ -265,17 +265,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nextbit/ether/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/nextbit/ether/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
-    vendor/nextbit/ether/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
-    vendor/nextbit/ether/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-    vendor/nextbit/ether/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
-    vendor/nextbit/ether/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/nextbit/ether/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    vendor/nextbit/ether/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/nextbit/ether/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
