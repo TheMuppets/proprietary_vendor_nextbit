@@ -223,6 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/cnd:system/bin/cnd \
     vendor/nextbit/ether/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/nextbit/ether/proprietary/bin/cnss_diag:system/bin/cnss_diag \
+    vendor/nextbit/ether/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/nextbit/ether/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/nextbit/ether/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/nextbit/ether/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -250,21 +251,28 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/nextbit/ether/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/nextbit/ether/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/nextbit/ether/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/nextbit/ether/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/nextbit/ether/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/nextbit/ether/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/nextbit/ether/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/nextbit/ether/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/nextbit/ether/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/nextbit/ether/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/nextbit/ether/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nextbit/ether/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/nextbit/ether/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/nextbit/ether/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
@@ -302,6 +310,11 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
@@ -407,6 +420,11 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
