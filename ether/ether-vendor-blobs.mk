@@ -233,7 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nextbit/ether/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/ether/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/nextbit/ether/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/nextbit/ether/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/nextbit/ether/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/nextbit/ether/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -343,7 +342,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
@@ -354,6 +352,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libQBLAS-0.11.38.so:system/vendor/lib64/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
@@ -385,6 +384,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwpa_qmi_eap_proxy.so:system/vendor/lib64/libwpa_qmi_eap_proxy.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
@@ -453,6 +453,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libQBLAS-0.11.38.so:system/vendor/lib/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
@@ -478,6 +479,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/nextbit/ether/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/nextbit/ether/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
