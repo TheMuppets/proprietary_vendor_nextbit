@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     ims \
     imssettings \
     QtiTelephonyService \
+    QtiTetherService \
     shutdownlistener \
     TimeService
 
