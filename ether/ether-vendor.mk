@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libidl \
     libmdmdetect \
+    libril \
     libqcci_legacy \
     libqmi_cci \
     libqmi_client_qmux \

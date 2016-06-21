@@ -102,6 +102,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b03:system/vendor/firmware/fpctzappfingerprint.b03 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.mdt:system/vendor/firmware/fpctzappfingerprint.mdt \
     vendor/nextbit/ether/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libactuator_dw9761b_camcorder.so:system/vendor/lib/libactuator_dw9761b_camcorder.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libactuator_dw9761b_camera.so:system/vendor/lib/libactuator_dw9761b_camera.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
@@ -369,9 +372,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
