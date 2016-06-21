@@ -263,6 +263,8 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.wbcservice.xml:system/etc/permissions/com.quicinc.wbcservice.xml \
+    vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.wbc.xml:system/etc/permissions/com.quicinc.wbc.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
@@ -274,14 +276,20 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/nextbit/ether/proprietary/framework/com.quicinc.wbc.jar:system/framework/com.quicinc.wbc.jar \
+    vendor/nextbit/ether/proprietary/framework/com.quicinc.wbcservice.jar:system/framework/com.quicinc.wbcservice.jar \
     vendor/nextbit/ether/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/nextbit/ether/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nextbit/ether/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/nextbit/ether/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nextbit/ether/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
+    vendor/nextbit/ether/proprietary/lib64/hw/wbc_hal.default.so:system/lib64/hw/wbc_hal.default.so \
+    vendor/nextbit/ether/proprietary/lib64/libwbc_jni.so:system/lib64/libwbc_jni.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
+    vendor/nextbit/ether/proprietary/lib/hw/wbc_hal.default.so:system/lib/hw/wbc_hal.default.so \
     vendor/nextbit/ether/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/nextbit/ether/proprietary/lib/libwbc_jni.so:system/lib/libwbc_jni.so \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
