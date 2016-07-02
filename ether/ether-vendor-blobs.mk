@@ -286,6 +286,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib64/hw/wbc_hal.default.so:system/lib64/hw/wbc_hal.default.so \
     vendor/nextbit/ether/proprietary/lib64/libwbc_jni.so:system/lib64/libwbc_jni.so \
+    vendor/nextbit/ether/proprietary/lib64/libwpa_qmi_eap_proxy.so:system/lib64/libwpa_qmi_eap_proxy.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/hw/wbc_hal.default.so:system/lib/hw/wbc_hal.default.so \
     vendor/nextbit/ether/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
@@ -399,7 +400,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libwpa_qmi_eap_proxy.so:system/vendor/lib64/libwpa_qmi_eap_proxy.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
