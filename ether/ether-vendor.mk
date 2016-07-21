@@ -291,7 +291,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib64/hw/wbc_hal.default.so:system/lib64/hw/wbc_hal.default.so \
     vendor/nextbit/ether/proprietary/lib64/libwbc_jni.so:system/lib64/libwbc_jni.so \
-    vendor/nextbit/ether/proprietary/lib64/libwpa_qmi_eap_proxy.so:system/lib64/libwpa_qmi_eap_proxy.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/hw/wbc_hal.default.so:system/lib/hw/wbc_hal.default.so \
     vendor/nextbit/ether/proprietary/lib/libwbc_jni.so:system/lib/libwbc_jni.so \
@@ -506,6 +505,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
+    libwpa_qmi_eap_proxy \
     libdiag \
     libdsutils \
     libidl \
