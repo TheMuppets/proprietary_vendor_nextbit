@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -303,12 +304,11 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/activity_recognition.msm8992.so:system/vendor/lib64/hw/activity_recognition.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:system/vendor/lib64/hw/gatekeeper.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/hw/vulkan.msm8992.so:system/vendor/lib64/hw/vulkan.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
@@ -317,6 +317,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
@@ -362,6 +363,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
@@ -371,13 +373,10 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libmm-abl-oem.so:system/vendor/lib64/libmm-abl-oem.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libmm-abl.so:system/vendor/lib64/libmm-abl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libQBLAS-0.11.38.so:system/vendor/lib64/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
@@ -424,12 +423,11 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/activity_recognition.msm8992.so:system/vendor/lib/hw/activity_recognition.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:system/vendor/lib/hw/gatekeeper.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/hw/vulkan.msm8992.so:system/vendor/lib/hw/vulkan.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -437,6 +435,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
@@ -466,21 +465,19 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libQBLAS-0.11.38.so:system/vendor/lib/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
