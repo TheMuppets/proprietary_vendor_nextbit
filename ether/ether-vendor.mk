@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/rild:system/bin/rild \
     vendor/nextbit/ether/proprietary/etc/firmware/TP_Firmware_nbq_ebbg.img:system/etc/firmware/TP_Firmware_nbq_ebbg.img \
     vendor/nextbit/ether/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V29.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V29.img \
+    vendor/nextbit/ether/proprietary/etc/firmware/TP_Firmware_nbq_ebbg_V35.img:system/etc/firmware/TP_Firmware_nbq_ebbg_V35.img \
     vendor/nextbit/ether/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/nextbit/ether/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/nextbit/ether/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -218,9 +219,12 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so
+    vendor/nextbit/ether/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so
 
 PRODUCT_PACKAGES += \
     libril \
@@ -271,8 +275,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.wbc.xml:system/etc/permissions/com.quicinc.wbc.xml \
-    vendor/nextbit/ether/proprietary/etc/permissions/com.quicinc.wbcservice.xml:system/etc/permissions/com.quicinc.wbcservice.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
@@ -285,17 +287,11 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/nextbit/ether/proprietary/framework/com.quicinc.wbc.jar:system/framework/com.quicinc.wbc.jar \
-    vendor/nextbit/ether/proprietary/framework/com.quicinc.wbcservice.jar:system/framework/com.quicinc.wbcservice.jar \
     vendor/nextbit/ether/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nextbit/ether/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/nextbit/ether/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
-    vendor/nextbit/ether/proprietary/lib/hw/wbc_hal.default.so:system/lib/hw/wbc_hal.default.so \
-    vendor/nextbit/ether/proprietary/lib/libwbc_jni.so:system/lib/libwbc_jni.so \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
-    vendor/nextbit/ether/proprietary/lib64/hw/wbc_hal.default.so:system/lib64/hw/wbc_hal.default.so \
-    vendor/nextbit/ether/proprietary/lib64/libwbc_jni.so:system/lib64/libwbc_jni.so \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
@@ -308,18 +304,14 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/gatekeeper.msm8992.so:system/vendor/lib/hw/gatekeeper.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib/hw/keystore.msm8992.so:system/vendor/lib/hw/keystore.msm8992.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/hw/vulkan.msm8992.so:system/vendor/lib/hw/vulkan.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -333,7 +325,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -354,7 +345,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/nextbit/ether/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
@@ -402,7 +392,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/gatekeeper.msm8992.so:system/vendor/lib64/hw/gatekeeper.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/hw/keystore.msm8992.so:system/vendor/lib64/hw/keystore.msm8992.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/hw/vulkan.msm8992.so:system/vendor/lib64/hw/vulkan.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
@@ -423,7 +412,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
@@ -441,7 +429,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
@@ -467,7 +454,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
@@ -520,10 +506,7 @@ PRODUCT_PACKAGES += \
     libwpa_qmi_eap_proxy \
     libthermalclient \
     libtime_genoff \
-    QtiTelephonyService \
     TimeService \
-    a4wpservice \
-    com.quicinc.wbcserviceapp \
     datastatusnotification \
     fastdormancy \
     shutdownlistener \
@@ -541,9 +524,6 @@ endif
 -include vendor/extra/devices.mk
 ifneq ($(call is-qc-perf-target),true)
 PRODUCT_COPY_FILES += \
-    vendor/nextbit/ether/proprietary/bin/iop:system/bin/iop \
-    vendor/nextbit/ether/proprietary/lib/libqti-iop.so:system/lib/libqti-iop.so \
-    vendor/nextbit/ether/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
     vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
@@ -551,10 +531,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
     vendor/nextbit/ether/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-    vendor/nextbit/ether/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so
 endif
