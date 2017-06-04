@@ -290,8 +290,16 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nextbit/ether/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/nextbit/ether/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/nextbit/ether/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
+    vendor/nextbit/ether/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/nextbit/ether/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/nextbit/ether/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/nextbit/ether/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
+    vendor/nextbit/ether/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
+    vendor/nextbit/ether/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
+    vendor/nextbit/ether/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
