@@ -82,7 +82,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_qcomdev.conf \
-    vendor/nextbit/ether/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
     vendor/nextbit/ether/proprietary/lib/hw/camera.msm8992.so:system/lib/hw/camera.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/hw/fingerprint.msm8992.so:system/lib/hw/fingerprint.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/libFIHNxp.so:system/lib/libFIHNxp.so \
