@@ -20,31 +20,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),ether)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libril
-LOCAL_MODULE_OWNER := nextbit
-LOCAL_SRC_FILES_64 := proprietary/lib64/libril.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libril.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libqmiservices
-LOCAL_MODULE_OWNER := nextbit
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmiservices.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmiservices.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-
-ifeq ($(QCPATH),)
-include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := nextbit
 LOCAL_SRC_FILES_64 := proprietary/lib64/libloc_api_v02.so
@@ -67,6 +42,17 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libril
+LOCAL_MODULE_OWNER := nextbit
+LOCAL_SRC_FILES_64 := proprietary/lib64/libril.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libril.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libwpa_qmi_eap_proxy
 LOCAL_MODULE_OWNER := nextbit
 LOCAL_SRC_FILES := proprietary/lib64/libwpa_qmi_eap_proxy.so
@@ -74,6 +60,18 @@ LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqmiservices
+LOCAL_MODULE_OWNER := nextbit
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmiservices.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmiservices.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -247,11 +245,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
-
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-endif
 
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib/egl && pushd $(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib64/egl && pushd $(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -s egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
