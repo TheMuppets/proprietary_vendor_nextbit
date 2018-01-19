@@ -39,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/nextbit/ether/proprietary/bin/radish:system/bin/radish \
     vendor/nextbit/ether/proprietary/bin/rfs_access:system/bin/rfs_access \
-    vendor/nextbit/ether/proprietary/bin/rild:system/bin/rild \
     vendor/nextbit/ether/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/nextbit/ether/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/nextbit/ether/proprietary/bin/time_daemon:system/bin/time_daemon \
@@ -476,7 +475,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
-    libril \
     libloc_api_v02 \
     libloc_ds_api \
     libwpa_qmi_eap_proxy \
