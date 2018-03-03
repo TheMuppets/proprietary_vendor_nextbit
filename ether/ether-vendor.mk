@@ -135,11 +135,15 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib/hw/fingerprint.msm8992.so:system/lib/hw/fingerprint.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/libFIHNxp.so:system/lib/libFIHNxp.so \
     vendor/nextbit/ether/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
+    vendor/nextbit/ether/proprietary/lib/libprotobuf-cpp-fulN.so:system/lib/libprotobuf-cpp-fulN.so \
+    vendor/nextbit/ether/proprietary/lib/libprotobuf-cpp-litN.so:system/lib/libprotobuf-cpp-litN.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx_hal.so:system/lib/libtfa98xx_hal.so \
     vendor/nextbit/ether/proprietary/lib64/hw/fingerprint.msm8992.so:system/lib64/hw/fingerprint.msm8992.so \
     vendor/nextbit/ether/proprietary/lib64/libFIHNxp.so:system/lib64/libFIHNxp.so \
     vendor/nextbit/ether/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/nextbit/ether/proprietary/lib64/libprotobuf-cpp-fulN.so:system/lib64/libprotobuf-cpp-fulN.so \
+    vendor/nextbit/ether/proprietary/lib64/libprotobuf-cpp-litN.so:system/lib64/libprotobuf-cpp-litN.so \
     vendor/nextbit/ether/proprietary/lib64/libtfa98xx.so:system/lib64/libtfa98xx.so \
     vendor/nextbit/ether/proprietary/lib64/libtfa98xx_hal.so:system/lib64/libtfa98xx_hal.so \
     vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
