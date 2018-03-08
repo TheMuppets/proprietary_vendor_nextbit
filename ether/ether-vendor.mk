@@ -98,7 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/nxp/settings/os/playback/4/coldboot.patch:system/etc/nxp/settings/os/playback/4/coldboot.patch \
     vendor/nextbit/ether/proprietary/etc/nxp/settings/os/playback/4/devkit_Release.parms:system/etc/nxp/settings/os/playback/4/devkit_Release.parms \
     vendor/nextbit/ether/proprietary/etc/nxp/settings/os/playback/4/speaker.speaker:system/etc/nxp/settings/os/playback/4/speaker.speaker \
-    vendor/nextbit/ether/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_qcomdev.conf \
