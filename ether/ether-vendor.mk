@@ -22,7 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/nextbit/ether/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/ether/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/nextbit/ether/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/nextbit/ether/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/nextbit/ether/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/nextbit/ether/proprietary/bin/pm-service:system/bin/pm-service \
