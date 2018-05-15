@@ -115,6 +115,12 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b00:system/vendor/firmware/fpctzappfingerprint.b00 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b01:system/vendor/firmware/fpctzappfingerprint.b01 \
     vendor/nextbit/ether/proprietary/vendor/firmware/fpctzappfingerprint.b02:system/vendor/firmware/fpctzappfingerprint.b02 \
