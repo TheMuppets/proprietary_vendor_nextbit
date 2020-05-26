@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/bin/rfs_access:system/vendor/bin/rfs_access \
     vendor/nextbit/ether/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/nextbit/ether/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
-    vendor/nextbit/ether/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/nextbit/ether/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
     vendor/nextbit/ether/proprietary/vendor/etc/data/qmi_config.xml:system/vendor/etc/data/qmi_config.xml \
@@ -298,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
@@ -376,5 +374,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
-    CNEService \
-    TimeService
+    CNEService
